@@ -1,0 +1,13 @@
+
+println(0x777)
+println(777)
+println(777L)
+println(1.5D)
+println(3e5)
+println(1.5F)
+println('a')
+println('\u2345')
+println("string")
+println("""Hello World""")
+println('symbol)
+println(true)
