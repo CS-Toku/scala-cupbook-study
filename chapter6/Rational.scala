@@ -1,3 +1,6 @@
+
+import scala.language.implicitConversions
+
 class Rational(n : Int, d: Int) {
   require(d != 0)
   private val g = gcd(n.abs, d.abs)
@@ -39,4 +42,8 @@ class Rational(n : Int, d: Int) {
     if (b == 0) a else gcd(b, a % b)
 }
 
-implicit def intToRational(x: Int): Rational = new Rational(x)
+object Rational {
+
+  implicit def intToRational(x: Int): Rational = new Rational(x)
+
+}
